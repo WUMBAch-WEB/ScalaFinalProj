@@ -1,33 +1,43 @@
+//Регистрация
 POST localhost:8080/users
 Content-Type: application/json
 
 {
-  "userName": "WUMBAch",
+  "userName": "WUMBAch12332",
   "firstName": "San9",
   "lastName": "Kuz",
   "phone": "899123",
-  "password": "qwerty"
+  "password": "qwerty",
 }
 
 ###
 
+//Авторизация
 POST localhost:8080/users/login
 Content-Type: application/json
 
 {
-  "userName": "WUMBAch",
+  "userName": "WUMBAch123",
   "password": "qwerty"
 }
 
 ###
-GET localhost:8080/users/WUMBAch
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDkwNDEsImlhdCI6MTY4NjA0OTA0MSwianRpIjoiYzhhNjExNWFhOGEzNzVlYjhjMGNhMTFiZWY3YzBjYzYifQ.Gdeiu7Ysh5xicrCBS9KAuE96VmyskjEubfNvyQnuBNM
 
-###
-
-DELETE localhost:8080/users/WUMBAch123321
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDc3MDMsImlhdCI6MTY4NjA0NzcwMywianRpIjoiYjVhY2JiNjhhNDQzMWE4YTJhZjY1NWM4ZmRhNTBjYWIifQ.27HfZ3rLchhgquFKZiKTzmvF3_7m_2KCePuoocUYNA8
+//Получение списка пользователей (Admin only)
+GET localhost:8080/users/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTgzODYsImlhdCI6MTY4NjA1ODM4NiwianRpIjoiNTk3ZWExMDIxNDM3ZTc0NGNkNzAwZmQ3YzJjODFkZTIifQ.ZPutaCcWmvoti74XTsVMWuUXltQKzuLnVul2FcrZpYI
 
 
 ###
+
+//Поиск пользователя по нику (Admin only)
+GET localhost:8080/users/WUMBAch123
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTgzODYsImlhdCI6MTY4NjA1ODM4NiwianRpIjoiNTk3ZWExMDIxNDM3ZTc0NGNkNzAwZmQ3YzJjODFkZTIifQ.ZPutaCcWmvoti74XTsVMWuUXltQKzuLnVul2FcrZpYI
+
+###
+
+//Удаление пользователя по нику (Admin only)
+DELETE localhost:8080/users/WUMBAch
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTgzODYsImlhdCI6MTY4NjA1ODM4NiwianRpIjoiNTk3ZWExMDIxNDM3ZTc0NGNkNzAwZmQ3YzJjODFkZTIifQ.ZPutaCcWmvoti74XTsVMWuUXltQKzuLnVul2FcrZpYI
+
 
