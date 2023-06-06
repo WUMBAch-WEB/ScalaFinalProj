@@ -1,0 +1,43 @@
+
+//Создание машины
+POST localhost:8080/cars
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODYzNjc1NzksImlhdCI6MTY4NjAwNzU3OSwianRpIjoiYjEzMDU5NWU4NmU3ODYwZjk3Y2NmMTYwYWY4ZmExYzEifQ.ReaBf8fkUrnHSyyaFuMi7NVm53CaYpdd3Npe76d51yA
+
+{
+  "model": "String",
+  "carNumber": "String",
+  "ownerId": 1
+}
+
+###
+//Обновление машины
+POST localhost:8080/cars/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDkwNDEsImlhdCI6MTY4NjA0OTA0MSwianRpIjoiYzhhNjExNWFhOGEzNzVlYjhjMGNhMTFiZWY3YzBjYzYifQ.Gdeiu7Ysh5xicrCBS9KAuE96VmyskjEubfNvyQnuBNM
+
+{
+  "model": "String123",
+  "carNumber": "456",
+  "ownerId": 1
+}
+###
+//Поиск машины по ее ID
+GET localhost:8080/cars/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDkwNDEsImlhdCI6MTY4NjA0OTA0MSwianRpIjoiYzhhNjExNWFhOGEzNzVlYjhjMGNhMTFiZWY3YzBjYzYifQ.Gdeiu7Ysh5xicrCBS9KAuE96VmyskjEubfNvyQnuBNM
+
+###
+//Поиск машины по ее номеру
+GET localhost:8080/cars/findByCarNumber?carNumber=456
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
+###
+//Поиск владельца машины по ее ID
+GET localhost:8080/cars/findOwnerByCarId/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
+###
+//Удаление машины по ее ID
+DELETE localhost:8080/cars/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+

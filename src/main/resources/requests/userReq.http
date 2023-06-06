@@ -1,0 +1,33 @@
+POST localhost:8080/users
+Content-Type: application/json
+
+{
+  "userName": "WUMBAch",
+  "firstName": "San9",
+  "lastName": "Kuz",
+  "phone": "899123",
+  "password": "qwerty"
+}
+
+###
+
+POST localhost:8080/users/login
+Content-Type: application/json
+
+{
+  "userName": "WUMBAch",
+  "password": "qwerty"
+}
+
+###
+GET localhost:8080/users/WUMBAch
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDkwNDEsImlhdCI6MTY4NjA0OTA0MSwianRpIjoiYzhhNjExNWFhOGEzNzVlYjhjMGNhMTFiZWY3YzBjYzYifQ.Gdeiu7Ysh5xicrCBS9KAuE96VmyskjEubfNvyQnuBNM
+
+###
+
+DELETE localhost:8080/users/WUMBAch123321
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDc3MDMsImlhdCI6MTY4NjA0NzcwMywianRpIjoiYjVhY2JiNjhhNDQzMWE4YTJhZjY1NWM4ZmRhNTBjYWIifQ.27HfZ3rLchhgquFKZiKTzmvF3_7m_2KCePuoocUYNA8
+
+
+###
+

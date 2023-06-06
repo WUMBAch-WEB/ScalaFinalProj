@@ -1,0 +1,30 @@
+
+//Создание мастерской
+POST localhost:8080/manufactories
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
+{
+  "name": "MegaFac"
+}
+
+###
+//Обновление мастерской
+POST localhost:8080/manufactories
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
+{
+  "name": "MegaFac2000"
+}
+###
+//Поиск мастерской по ее ID
+GET localhost:8080/manufactories/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
+###
+
+//Удаление мастерской по ее ID
+DELETE localhost:8080/manufactories/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+

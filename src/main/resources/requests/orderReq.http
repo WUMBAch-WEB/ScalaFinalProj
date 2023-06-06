@@ -1,0 +1,22 @@
+
+//Создание заказа с привязкой к конкретной машине
+POST localhost:8080/orders/carId/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
+{
+  "price": 300
+}
+
+
+###
+//Поиск заказа по его ID
+GET localhost:8080/orders/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MDkwNDEsImlhdCI6MTY4NjA0OTA0MSwianRpIjoiYzhhNjExNWFhOGEzNzVlYjhjMGNhMTFiZWY3YzBjYzYifQ.Gdeiu7Ysh5xicrCBS9KAuE96VmyskjEubfNvyQnuBNM
+
+
+###
+//Удаление заказа по его ID
+DELETE localhost:8080/orders/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODY0MTAzNDUsImlhdCI6MTY4NjA1MDM0NSwianRpIjoiZmYxYzMyMjg1YjE5ZDY0YzBkODA1NzkzNmY0NzFiYTAifQ.KYE0m4dO5Sprrpp2zM8COBf3tG_kGR908QUj3wXDOuI
+
